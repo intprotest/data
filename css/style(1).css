@@ -1,0 +1,117 @@
+/*
+Theme Name: State of the Internet
+Theme URI: #
+Author: Akamai
+Author URI: #
+Description: State of the Internet.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: soti
+Text Domain: soti
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.nav > li > a:hover, .nav > li > a:focus{background: #383838;}
+
+/* line 15 */
+
+.intro{ min-height:262px; margin:41px 0 45px 0; overflow:hidden; display:table; width:100%;}
+
+/* line 33 */
+
+.introbox.transparentbox{ max-width:inherit !important; padding:10px 30px; height:214px; display: table-cell;  vertical-align: middle;}
+
+
+/* line 57 */
+
+.introbox{ max-width:408px; margin:21px 0 0 0; padding:0 15px 0 30px;}
+
+/* line 66 */
+
+.introbox h2{margin-top: 12px; margin-bottom: 6px;}
+
+
+/* line 92 */
+blockquote{ margin-top:40px;}
+.quote-inner.noimg{background:#fff; padding:30px 40px; min-height: inherit;}
+.quote-inner.noimg footer:before{content: "";}
+.quote-inner.noimg em{ color:#666;}
+.quote-inner.noimg img{ margin-right:16px;}
+.quote-inner.noimg h2{margin:4px 0 4px 0; font-size:20px;}
+.quote-inner.noimg br{ display:none;}
+.quote-inner.noimg p{ margin-bottom:2px}
+
+.listlft{ list-style:none; padding:0; margin:0;}
+.listlft > li strong { display: block; font-weight:600; font-size:14px;}
+.listlft > li{ margin-bottom:20px;}
+ul.list {
+    margin: 0 0 20px;
+    padding: 0 0 0 14px;
+}
+
+h3{ font-weight:500; margin-bottom:10px;}
+ul.list li{ margin-bottom:10px;}
+.gsib_a{border:0 !important;}
+table, TD{ border:0 !important;}
+
+/* for report page */
+.reportlist h2{ font-weight:700; color:#666;}
+.reportlist ul.list{list-style-position: inside; padding:0;}
+.reportlist ul.list li{ color:#0099cc;}
+.reportlist ul.list li em{ color:#666;}
+.reportlist .pull-right{ min-width:310px;}
+
+
+.footer-left ul li ul{ padding:0; margin:0; list-style:none;}
+.footer-left ul li ul li { display: block; margin: 0 0 10px;}
+.footer{ padding-bottom:30px;}
+.footer-left li:last-child { margin-right: 0;}
+.navbar-right{width:258px;}
+/**/
+.btn-info {
+    background-color: #0099cc;
+    border-color: #46b8da;
+    color: #fff;
+    margin: 10px 0 20px;
+    text-align: center;
+    width: 100%;
+}
+.introbox.transparentbox.gatedtransparentbox{
+height:122px;
+}
+.introbox.transparentbox.gatedtransparentbox span{color:#fff;font-size:18px;}
+.introbox.transparentbox.gatedtransparentbox h2{margin-top:0;}
+/*.innerpage-whiteoverlay.gatedpage-whiteoverlay {background-position: 0 30px;}*/
+.innerpage-whiteoverlay.gatedpage-whiteoverlay {background-position: 0 38px;}
+
+.quote-inner.noimg h2{ font-weight:100;}
+.quote-inner.noimg h2 em{color:#231f20;}
+
+@media (min-width:992px) and (max-width:1199px) {
+.nav.nav-tabs.new.fivetab li a {font-size:11.7px;}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+.reportlist .pull-right{ min-width:inherit;}
+.quote-inner.noimg{ padding:10px;}
+.nav.nav-tabs.new li a{ width:auto;  font-size:11.5px; padding:4px;}
+.nav.nav-tabs.new li.active a {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.nav-tabs.new.fivetab > li {float:none;}
+.nav.nav-tabs.new.fivetab li a {width:100%}
+.navbar-right{ width:204px}
+}
+
+@media (max-width: 767px) { 
+.reportlist .pull-right{ min-width:inherit; float:none !important;}
+blockquote{ font-size:16px; line-height:normal;}
+.quote-inner.noimg{ padding:10px;    overflow: hidden;}
+.quote-inner.noimg h2{ font-size:16px;}
+.quote-inner {background-size:20px; background-position:0 20px; padding: 20px;}
+.nav.nav-tabs.new li{ float:none;}
+.nav.nav-tabs.new li a{ width:100%;}
+.nav.nav-tabs.new.fivetab li a {width:100%}
+}

@@ -1,0 +1,204 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 6:56:08 Mar 21, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:44:23 Mar 28, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+ * Table styles
+ */
+*,a,a:focus,a:active{outline: 0}
+table.dataTable th{ width:auto !important;}
+table.dataTable th:nth-child(1), table.dataTable th:nth-child(2){ width:140px !important;}
+body{ margin:0; padding:0; background: #2b2b2b}
+.ipv6btn{ text-align:right; padding:10px 0 0 0;}
+.btn.btnNew.active,.btn.btnNew:active,.btnNew{-moz-border-radius:3px;-webkit-border-radius:3px;-moz-box-shadow:1px 2px 4px 
+                                                  0 rgba(0,0,0,.17),inset 1px 1px 1px 0 #696F6E;box-shadow:1px 2px 4px 0 rgba(0,0,0,.17),inset 1px 1px 1px 0 #696F6E;border-
+                                              radius:3px;background-image:-o-linear-gradient(-89deg,#3c4045 0,#3c3f44 100%);background-image:-moz-linear-gradient(-
+                                                  89deg,#3c4045 0,#3c3f44 100%);background-image:-ms-linear-gradient(-89deg,#3c4045 0,#3c3f44 100%);background-image:linear-
+                                                  gradient(-179deg,#3c4045 0,#3c3f44 100%);color:#02a3f0;line-height:13px;padding:5px 22px 6px 
+                                                  9px;position:relative;margin:3px 0 3px 5px!important;outline:0}
+.btn.btnNew.green:hover, .btn.btnNew.green:focus, .btn.btnNew.green{color: #a2d913;}
+.btn.btnNew:hover, .btn.btnNew:focus, .btn.btnNew.focus{color: #02a3f0;}
+
+table.dataTable {
+    margin: 0 auto;clear: both;border-collapse: separate;border-spacing: 0;background:none;font-family: Ubuntu,sans-serif;color:#fff;font-size:13.5px;font-weight:300;
+}
+table.dataTable thead,.dataTables_scrollHeadInner{width: 100% !important; max-width:420px !important;}
+.dataTables_scrollHeadInner table.dataTable{width: 100% !important;
+                                            max-width:420px !important;}
+
+.dataTables_scrollHeadInner table.dataTable th:last-child{ display:none;}
+
+table.dataTable th{cursor: pointer;text-align:left;font-weight:300;}
+table.dataTable thead .sorting {
+    /*background: url("/web/20150321065608/http://www.stateoftheinternet.com/wp-content/themes/soti/ipv6/images/sort_both.png") no-repeat center left;*/
+    text-align:left;
+    font-weight:300;
+   
+}
+table.dataTable thead .sorting:nth-child(2){ }
+table.dataTable thead .sorting_asc {
+    background: url("/web/20150321065608/http://www.stateoftheinternet.com/wp-content/themes/soti/ipv6/images/sort_asc1.png") no-repeat 56px center;
+    text-align:left;
+    font-weight:300;
+    
+}
+
+
+table.dataTable thead .sorting_desc {
+    background: url("/web/20150321065608/http://www.stateoftheinternet.com/wp-content/themes/soti/ipv6/images/sort_desc1.png") no-repeat 56px center;
+    text-align:left;
+    font-weight:300;
+    
+}
+
+
+
+.green table.dataTable thead .sorting_asc {
+    background: url("http://caucasusoffline.com/data/1/sort_asc.png") no-repeat 50px center;
+    text-align:left;
+    font-weight:300;
+    
+}
+.green table.dataTable thead .sorting_desc {
+    background: url("http://caucasusoffline.com/data/1/sort_desc.png") no-repeat 50px center;
+    text-align:left;
+    font-weight:300;
+}
+table.dataTable thead .sorting_asc_disabled {
+    background: url("http://www.stateoftheinternet.com/wp-content/themes/soti/ipv6/images/sort_asc_disabled.png") no-repeat center left;
+    text-align:left;
+    font-weight:300;
+}
+table.dataTable thead .sorting_desc_disabled {
+    background: url("/web/20150321065608/http://www.stateoftheinternet.com/wp-content/themes/soti/ipv6/images/sort_desc_disabled.png") no-repeat center left;
+    text-align:left;
+    font-weight:300;
+}
+.dataTables_scrollHead{ clear:both;}
+.dataTables_scrollHead .dataTable tr{ background:none !important; box-shadow:none !important;}
+
+#asn_data_table_filter,#country_data_table_filter {
+    display: none;
+    margin: 0 0 10px;
+    overflow: hidden;
+    text-align: right;
+    right:30px;
+    top:15px;
+    position:absolute;
+    z-index:1;
+}
+
+#asn_data_table_filter label,#country_data_table_filter label {
+    color: #2b2b2b;
+    font-size:0;
+}
+/*.arrow-1{ background:url(/web/20150321065608/http://www.stateoftheinternet.com/data-visualizations/assets/icon/icon-down-arrow.jpg) 0 0  no-repeat; display:inline-block; width:10px; height:6px;}*/
+#metric1_chzn, .chzn-drop{ width:120px !important;}
+#tableSelector_chzn, .chzn-drop{ width:120px !important;}
+.chzn-search{ display:none;}
+div.chzn-container{ background:none; box-shadow:none;}
+.tablehead{ color:#fff; padding:14px 0 14px 16px;}
+.tablehead .sort{ color:#718174; font-size:12px;}
+.tablebody{ margin: 0; font-weight:300; }
+.tablebody tr{cursor:pointer;background-color: #323635; -webkit-box-shadow: 1px 2px 4px rgba(0,0,0,.4); -moz-box-shadow: 1px 2px 4px rgba(0,0,0,.4); box-shadow: 1px 2px 4px rgba(0,0,0,.4); margin:0 0 12px 0; display:table; width: 100%; }
+.tablebody thead tr{background: none !important;-webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none;}
+.tablebody tr td{padding:12px 14px; border-top:1px solid #4a4d4a; }
+
+.tablebody td:first-child{ background:#2c6f97; color:#fff; font-size:22px; font-weight:300; border-top:1px solid #479fd3; border-left:1px solid #479fd3; width:54px; cursor:pointer; text-align:center; padding-left:0; padding-right:0;}
+.tablebody td:nth-child(2) {color: #fff; font-size:22px; width:212px; padding-left:86px;}
+.tablebody td:nth-child(3) {color: #2c6f97; font-size:20px; font-weight:300; text-align:left}
+
+#asn_data_table_filter input, #country_data_table_filter input, #myInputTextField{text-align:right; background:#1e201e url(/web/20150321065608/http://www.stateoftheinternet.com/wp-content/themes/soti/ipv6/images/ipv6-icon-src.png) 98% 10px no-repeat; border-top:1px solid #151515; border-left:1px solid #1c1e1c; border-right:1px solid #1c1e1c; border-bottom:0; border-radius:0; padding:6px 20px 6px 6px; font-size:12px; height:auto; font-weight: 300;}
+
+#country_data_table_filter input, #myInputTextField{color:#696862;background:#1e201e url(/web/20150321065608/http://www.stateoftheinternet.com/wp-content/themes/soti/ipv6/images/icon-src1.png) 98% 10px no-repeat;}
+.green #country_data_table_filter input, .green #myInputTextField{background:#1e201e url(/web/20150321065608/http://www.stateoftheinternet.com/wp-content/themes/soti/ipv6/images/ipv6-icon-src.png) 98% 10px no-repeat;}
+
+#asn_data_table_filter input:focus,#country_data_table_filter input:focus, #myInputTextField{text-align:left; color:#696862;}
+.btn.btn-default.btnsrc{ color:#fff; font-size:10px; width:20px; border:0; height:23px; background:none; min-width:inherit; margin-left:-20px; z-index:9;}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+.highcharts-contextmenu div {
+    -webkit-box-shadow: none!important; 
+    box-shadow: none!important; 
+    z-index: 9998 !important;
+}
+.highcharts-contextmenu div div:nth-child(2),
+.highcharts-contextmenu div div:nth-child(3),
+.highcharts-contextmenu div div:nth-child(4),
+.highcharts-contextmenu div div:nth-child(5),
+.highcharts-contextmenu div div:nth-child(6)
+{ padding: 4px 10px !important; display: block !important;}
+
+/*Green theme*/
+/*.green .arrow-1{ background:url(/web/20150321065608/http://www.stateoftheinternet.com/data-visualizations/assets/icon/icon-down-arrow-green.jpg) 0 0  no-repeat; display:inline-block; width:10px; height:6px;}*/
+.green .btn.btn-default.btnsrc{ color:#a2d901;}
+.green .tablebody td:first-child{ background:#87953b; color:#fff; font-size:22px; font-weight:300; border-top:1px solid #aab964; border-left:1px solid #aab964; width:54px;}
+.green .tablebody td:nth-child(3) {color: #a2d913; font-size:20px;}
+.green div.chzn-container a.chzn-single div b {background: url('/web/20150321065608/http://www.stateoftheinternet.com/wp-content/themes/soti/ipv6/images/chosen-sprite.png') no-repeat 0 -20px;
+                                               display: block; width: 100%; height: 100%;}
+.green div.chzn-container ul.chzn-results li.highlighted{background:#87953b;}
+.dataTables_filter{float:right;}
+.datafooter{ background:#222222; padding:10px; color:#fff; font-size:12px; font-weight:300; height:40px;}
+.datafooter span{padding-right:50px;}
+.area-chart{width: 94%; height: 294px; margin: 0;}
+.trChart{height: 345px;position: relative;vertical-align: top;}
+.tdChart{ left: 0;position: absolute;top: 52px; width: 100%; padding:0 !important; border-top:0 none !important;}
+.resetsearch{color:#2c6f97;cursor: pointer;z-index: 9999;font-size:12px;background-color: #1e201e; width: 16px; right: 17px; top: 20px; position: absolute;}
+.green .resetsearch{color:#a2d913;}
+.highcharts-contextmenu{z-index:9999 !important;}
+
+@media screen and (max-width: 767px) {
+    .dataTables_wrapper .dataTables_info,
+    .dataTables_wrapper .dataTables_paginate {
+        float: none;
+        text-align: center;
+    }
+    .dataTables_wrapper .dataTables_paginate {
+        margin-top: 0.5em;
+    }
+}
+@media screen and (max-width: 640px) {
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter {
+        float: none;
+        text-align: center;
+    }
+    .dataTables_wrapper .dataTables_filter {
+        margin-top: 0.5em;
+    }
+    .tablebody td:nth-child(2){ padding-left:10px;}
+    .tablebody td:first-child,  .green .tablebody td:first-child{ font-size:12px; }
+    .tablebody td:nth-child(2), .tablebody td:nth-child(3),.green .tablebody td:nth-child(3){font-size:12px;}
+    .datavisulal h2 {color: #e1dddb; font-size: 12px; margin-top: 12px; margin-bottom: 70px;}
+    .datavisulal h2 font{ display:none;}
+    #country_data_table_filter{ top:10px;}
+
+    .btn.btnNew.active, .btn.btnNew:active, .btnNew{ font-size: 11px; padding: 5px 4px 6px 6px;}
+    .ipv6btn{ margin-left: -25px;}
+    .resetsearch{color:#2c6f97;cursor: pointer; z-index: 9999;font-size:12px;background-color: #1e201e; width: 16px; right: 17px; top: 15px; position: absolute; height: 29px;padding: 5px 4px 0 0;}
+    table.dataTable th { width: auto ! important; }
+
+   table.dataTable th:nth-child(1){ width:70px !important;}
+   table.dataTable th:nth-child(2){width:80px !important;}
+   .tablebody td:nth-child(2){ padding-left:15px !important; }
+   .tablebody td:nth-child(2){width:80px !important;}
+  
+}
+@media screen and (max-width: 360px) {
+    #myInputTextField{ margin: -30px 0 10px 0; position: relative;}
+    .resetsearch{color:#2c6f97;cursor: pointer; z-index: 9999;font-size:12px;background-color: #1e201e; width: 16px; right: 17px; top: 25px; position: absolute; height: 29px;padding: 5px 4px 0 0;}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+}
